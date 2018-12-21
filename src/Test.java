@@ -20,17 +20,17 @@ public class Test {
         List<Subject> subjects = new ArrayList<>(5);
         List<Mark> marks = new ArrayList<>();
         //1
-        group.add(0, new Student("Valery","Popov"));
-        group.add(1, new Student("Semyon","Korzhev"));
-        group.add(2, new Student("Peter","Ivanov"));
-        group.add(3, new Student("Maria","Semenova"));
-        group.add(4, new Student("Kolya","Nesterenko"));
+        group.add(new Student("Valery","Popov"));
+        group.add(new Student("Semyon","Korzhev"));
+        group.add(new Student("Peter","Ivanov"));
+        group.add(new Student("Maria","Semenova"));
+        group.add(new Student("Kolya","Nesterenko"));
         // 2
-        subjects.add(0, new Subject("Mathematics", true));
-        subjects.add(1, new Subject("Physics", true));
-        subjects.add(2, new Subject("Astronomy", true));
-        subjects.add(3, new Subject("History", true));
-        subjects.add(4, new Subject("Ethics", false));
+        subjects.add(new Subject("Mathematics", true));
+        subjects.add(new Subject("Physics", true));
+        subjects.add(new Subject("Astronomy", true));
+        subjects.add(new Subject("History", true));
+        subjects.add(new Subject("Ethics", false));
         // 3
         for (Subject subject : subjects) {
             for (Student student : group) {
